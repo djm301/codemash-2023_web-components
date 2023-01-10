@@ -3,7 +3,7 @@
   "tags": [
     {
       "name": "my-switch",
-      "description": "Switches allow the user to toggle an option on or off.\n\n**Events:**\n - **switch-change,** - undefined",
+      "description": "Switches allow the user to toggle an option on or off.\n\n**Events:**\n - **switch-change** - emitted whenever the switch is toggled\n\n**CSS Properties:**\n - **--size** - undefined _(default: 1rem)_",
       "attributes": [
         {
           "name": "label",
@@ -14,6 +14,20 @@
           "name": "checked",
           "description": "indicates if switch is on or off \nset default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
           "values": []
+        },
+        {
+          "name": "disabled",
+          "description": "indicates if switch is disabled",
+          "values": []
+        },
+        {
+          "name": "label-position",
+          "values": [
+            { "name": "top" },
+            { "name": "start" },
+            { "name": "end" },
+            { "name": "bottom" }
+          ]
         }
       ]
     }
