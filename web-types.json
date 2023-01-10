@@ -8,7 +8,7 @@
       "elements": [
         {
           "name": "my-switch",
-          "description": "Switches allow the user to toggle an option on or off.",
+          "description": "Switches allow the user to toggle an option on or off.\n\n**Events:**\n - **switch-change,** - undefined",
           "doc-url": "",
           "attributes": [
             {
@@ -18,7 +18,7 @@
             },
             {
               "name": "checked",
-              "description": "set default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
+              "description": "indicates if switch is on or off \nset default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
               "value": { "type": "boolean" }
             }
           ],
@@ -31,11 +31,11 @@
               },
               {
                 "name": "checked",
-                "description": "set default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
+                "description": "indicates if switch is on or off \nset default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
                 "value": { "type": "boolean" }
               }
             ],
-            "events": []
+            "events": [{ "name": "switch-change," }]
           }
         }
       ]

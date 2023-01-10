@@ -1,13 +1,14 @@
 import { html } from "lit";
 import "./index";
 
+/**added switch-change to handles */
 export default {
   title: "Components/Switch",
   component: "my-switch",
   argTypes: {},
   parameters: {
     actions: {
-      handles: [],
+      handles: ['switch-change'],
     },
   },
 };
@@ -23,7 +24,7 @@ const DefaultTemplate = (args: any) => {
 // bind template to example
 export const Default: any = DefaultTemplate.bind({});
 Default.args = {
-  label: 'Test'
+  label: 'Don Miller'
 
 };
 
