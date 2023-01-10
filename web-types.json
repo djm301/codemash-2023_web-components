@@ -10,8 +10,33 @@
           "name": "my-switch",
           "description": "Switches allow the user to toggle an option on or off.",
           "doc-url": "",
-          "attributes": [],
-          "js": { "properties": [], "events": [] }
+          "attributes": [
+            {
+              "name": "label",
+              "description": "this is used to describe the switch - djm",
+              "value": { "type": "string | undefined" }
+            },
+            {
+              "name": "checked",
+              "description": "set default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
+              "value": { "type": "boolean" }
+            }
+          ],
+          "js": {
+            "properties": [
+              {
+                "name": "label",
+                "description": "this is used to describe the switch - djm",
+                "value": { "type": "string | undefined" }
+              },
+              {
+                "name": "checked",
+                "description": "set default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
+                "value": { "type": "boolean" }
+              }
+            ],
+            "events": []
+          }
         }
       ]
     },

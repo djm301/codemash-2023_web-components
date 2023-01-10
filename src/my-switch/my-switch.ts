@@ -1,5 +1,5 @@
 import { LitElement, html } from 'lit'
-import { customElement } from 'lit/decorators.js'
+import { customElement, property } from 'lit/decorators.js'
 import { styles } from './my-switch.styles';
 
 
@@ -13,8 +13,21 @@ import { styles } from './my-switch.styles';
 export class MySwitch extends LitElement {
   static styles = styles;
 
+  /** this is used to describe the switch - djm */
+  @property() label?: string;
+
+  /**set default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string*/
+  @property({type:Boolean}) checked:boolean = false;
+
+  // role = switch is for accessibility
   render() {
-    return html`<h1>Hello, CodeMash!!!</h1>`
+    return html`
+      <label id="switch-label"> ${this.label} </label>
+      <button role="switch"  class="control" aria-labelledby="switch-label" aria-checked="${this.checked}"></button>
+      <div class="track">
+        <div class="switch">  </div>
+      </div>
+        `
   }
 }
 

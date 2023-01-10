@@ -4,7 +4,18 @@
     {
       "name": "my-switch",
       "description": "Switches allow the user to toggle an option on or off.",
-      "attributes": []
+      "attributes": [
+        {
+          "name": "label",
+          "description": "this is used to describe the switch - djm",
+          "values": []
+        },
+        {
+          "name": "checked",
+          "description": "set default to false  @property name:type lit has built in translators eg type:Boolean so it won't make it a string",
+          "values": []
+        }
+      ]
     }
   ]
 }
